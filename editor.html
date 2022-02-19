@@ -243,9 +243,9 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
 });
 let script = params.script; // "some_value"
 console.log('script raw : ', script)
-console.log('script decodeURI : ', decodeURIComponent(params.script))
+console.log('script decodeURI : ', decodeURI(params.script))
 
-editor.textContent = script.split('customS').join('script');
+editor.textContent = script.split('customS').join('script').split('customPlus').join('+');
 document.getElementById("iframe").style.display = "none";
 
 const drag = (e) => {

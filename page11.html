@@ -388,7 +388,7 @@
 <p id="demo"></p>
 
 <customS>
-let x = 16 + "Volvo";
+let x = 16 customPlus "Volvo";
 document.getElementById("demo").innerHTML = x;
 </customS>
 
@@ -408,7 +408,7 @@ document.getElementById("demo").innerHTML = x;
 <p id="demo"></p>
 
 <customS>
-let x = 16 + "Volvo";
+let x = 16 customPlus "Volvo";
 document.getElementById("demo").innerHTML = x;
 </customS>
 
@@ -428,7 +428,7 @@ document.getElementById("demo").innerHTML = x;
 <p id="demo"></p>
 
 <customS>
-let x = 16 + "Volvo";
+let x = 16 customPlus "Volvo";
 document.getElementById("demo").innerHTML = x;
 </customS>
 
@@ -449,7 +449,7 @@ document.getElementById("demo").innerHTML = x;
 <p id="demo"></p>
 
 <customS>
-let x = "Volvo" + 16;
+let x = "Volvo" customPlus 16;
 document.getElementById("demo").innerHTML = x;
 </customS>
 
@@ -472,7 +472,7 @@ let carName1 = "Volvo XC60";
 let carName2 = 'Volvo XC60';
 
 document.getElementById("demo").innerHTML =
-carName1 + "<br>" +
+carName1 customPlus "<br>" customPlus
 carName2;
 </customS>
 
@@ -496,7 +496,7 @@ let x2 = 34;
 let x3 = 3.14;
 
 document.getElementById("demo").innerHTML =
-x1 + "<br>" + x2 + "<br>" + x3;
+x1 customPlus "<br>" customPlus x2 customPlus "<br>" customPlus x3;
 </customS>
 
 </body>
@@ -519,7 +519,7 @@ let y = 5;
 let z = 6;
 
 document.getElementById("demo").innerHTML =
-(x == y) + "<br>" + (x == z);
+(x == y) customPlus "<br>" customPlus (x == z);
 </customS>
 
 </body>
@@ -563,7 +563,7 @@ const person = {
 };
 
 document.getElementById("demo").innerHTML =
-person.firstName + " is " + person.age + " years old.";
+person.firstName customPlus " is " customPlus person.age customPlus " years old.";
 </customS>
 
 </body>
