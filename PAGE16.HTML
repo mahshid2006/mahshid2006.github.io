@@ -1,459 +1,557 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {box-sizing: border-box;}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-.topnav {
-  overflow: hidden;
-  background-color: rgb(255, 199, 96);
-  display: flex;
-  flex-direction: row-reverse;
-}
+        .topnav {
+            overflow: hidden;
+            background-color: rgb(255, 199, 96);
+            display: flex;
+            flex-direction: row-reverse;
+        }
 
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
 
-.topnav a:hover {
-  background-color: rgb(255, 240, 212);
-  color: black;
-}
+        .topnav a:hover {
+            background-color: rgb(255, 240, 212);
+            color: black;
+        }
 
-.topnav a.active {
-  background-color: rgb(255, 166, 0);
-  color: black;
-}
+        .topnav a.active {
+            background-color: rgb(255, 166, 0);
+            color: black;
+        }
 
-.topnav input[type=text] {
-  float: right;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  border: none;
-  font-size: 17px;
-}
+        .topnav input[type=text] {
+            float: right;
+            padding: 6px;
+            margin-top: 8px;
+            margin-right: 16px;
+            border: none;
+            font-size: 17px;
+        }
 
-@media screen and (max-width: 600px) {
-  .topnav a, .topnav input[type=text] {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
+        @media screen and (max-width: 600px) {
+            .topnav a, .topnav input[type=text] {
+                float: none;
+                display: block;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
 
-  .topnav input[type=text] {
-    border: 1px solid #ccc;
-  }
-}
-</style>
+            .topnav input[type=text] {
+                border: 1px solid #ccc;
+            }
+        }
+    </style>
 </head>
 <body>
 
 <div class="topnav">
-  <a  href="index.html">برگشت به خانه</a>
-  <a href="page4.html">مرجع جاوااسکریپت </a>
-  <a href="first page.html" class="active" >آموزش جاوااسکریپت</a>
-    <a  href="aboutme.html" >! درباره من </a>
+    <a href="index.html">برگشت به خانه</a>
+    <a href="page4.html">مرجع جاوااسکریپت </a>
+    <a href="first page.html" class="active">آموزش جاوااسکریپت</a>
+    <a href="aboutme.html">! درباره من </a>
 
 </div>
 
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
 
-* {
-  box-sizing: border-box;
-}
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
- .row {
-  display: flex;
-  display: flex;
-  flex-direction: row-reverse;
- }
+        * {
+            box-sizing: border-box;
+        }
 
- .left {
-  flex: 1%;
-  padding: 15px 0;
-}
+        .row {
+            display: flex;
+            display: flex;
+            flex-direction: row-reverse;
+        }
 
-.left h2 {
-  padding-left: 8px;
-}
+        .left {
+            flex: 1%;
+            padding: 15px 0;
+        }
 
- .right {
-  flex: 65%;
-  padding: 15px;
-}
+        .left h2 {
+            padding-left: 8px;
+        }
 
-#mySearch {
-  width: 100%;
-  font-size: 18px;
-  padding: 11px;
-  border: 1px solid orange;
-}
+        .right {
+            flex: 65%;
+            padding: 15px;
+        }
 
-#myMenu {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
+        #mySearch {
+            width: 100%;
+            font-size: 18px;
+            padding: 11px;
+            border: 1px solid orange;
+        }
 
-#myMenu li a {
-  padding: 12px;
-  text-decoration: none;
-  color: black;
-  display: block
-}
+        #myMenu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
 
-#myMenu li a:hover {
-  background-color: rgb(255, 240, 212);
-}
-.active {
-  background-color: rgb(255, 168, 6);
-  color: white;
-}
-</style>
+        #myMenu li a {
+            padding: 12px;
+            text-decoration: none;
+            color: black;
+            display: block
+        }
+
+        #myMenu li a:hover {
+            background-color: rgb(255, 240, 212);
+        }
+
+        .active {
+            background-color: rgb(255, 168, 6);
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
 
-
 <div class="row">
-  <div class="left" style="direction:rtl;background-color:rgb(255, 221, 157);">
-    <h2>آموزش جاوااسکریپت</h2>
-    <input type="text" id="mySearch" onkeyup="myFunction()"
-    placeholder="...جستجو کنید" title="Type in a category">
-    <ul id="myMenu">
-         <li><a    href="first page.html">مقدمه جاوااسکریپت</a></li>
-        <li><a  href=" secondpage.html">معرفی جاوااسکریپت</a></li>
-         <li><a   href="thirdpage.html"> خروجی جاوااسکریپت</a></li>
-        <li><a href="pagefour.html"> بیانیه های جاوااسکریپت</a></li>
-        <li><a  href="fifthpage.html">کامنت گذاری در جاوااسکریپت</a></li>
-        <li><a  href="sixpage.html">متغیر های جاوااسکریپت</a></li>
-        <li><a   href="page seven.html">تگ let</a></li>
-               <li><a  href="page8.html">تگconst</a></li>
-        <li><a  href="page9.html"> اپراتور های جااوااسکریپت</a></li>
-        <li><a  href="page10.html"> محاسبات جاوااسکریپت</a></li>
-        <li><a   href="page11.html"> انواع داده های جاوااسکریپت</a></li>
-        <li><a  href="page12.html"> توابع جاوااسکریپت</a></li>
-        <li><a  href="page13.html">اشیا جاوااسکریپت</a></li>
-        <li><a  href="page14.html"> اعداد در جاوااسکریپت</a></li>
-        <li><a  href="page15.html"> آرایه های در جاوااسکریپت</a></li>
-        <li><a class="active" href="PAGE16.HTML"> math object در جاوااسکریپت</a></li>
-        <li><a href="page17.html"> تصادفی،چرخشی، رندوم در جاوااسکریپت</a></li>
-        <li><a href="page18.html"> بولین های جاوااسکریپت</a></li>
-        <li><a href="page19.html"> forحلقه در جاوااسکریپت</a></li>
-        <li><a href="page20.html">متد مپ در جاوااسکریپت</a></li>
+    <div class="left" style="direction:rtl;background-color:rgb(255, 221, 157);">
+        <h2>آموزش جاوااسکریپت</h2>
+        <input type="text" id="mySearch" onkeyup="myFunction()"
+               placeholder="...جستجو کنید" title="Type in a category">
+        <ul id="myMenu">
+            <li><a href="first page.html">مقدمه جاوااسکریپت</a></li>
+            <li><a href="secondpage.html">معرفی جاوااسکریپت</a></li>
+            <li><a href="thirdpage.html"> خروجی جاوااسکریپت</a></li>
+            <li><a href="pagefour.html"> بیانیه های جاوااسکریپت</a></li>
+            <li><a href="fifthpage.html">کامنت گذاری در جاوااسکریپت</a></li>
+            <li><a href="sixpage.html">متغیر های جاوااسکریپت</a></li>
+            <li><a href="page seven.html">تگ let</a></li>
+            <li><a href="page8.html">تگconst</a></li>
+            <li><a href="page9.html"> اپراتور های جااوااسکریپت</a></li>
+            <li><a href="page10.html"> محاسبات جاوااسکریپت</a></li>
+            <li><a href="page11.html"> انواع داده های جاوااسکریپت</a></li>
+            <li><a href="page12.html"> توابع جاوااسکریپت</a></li>
+            <li><a href="page13.html">اشیا جاوااسکریپت</a></li>
+            <li><a href="page14.html"> اعداد در جاوااسکریپت</a></li>
+            <li><a href="page15.html"> آرایه های در جاوااسکریپت</a></li>
+            <li><a class="active" href="PAGE16.HTML"> math object در جاوااسکریپت</a></li>
+            <li><a href="page17.html"> تصادفی،چرخشی، رندوم در جاوااسکریپت</a></li>
+            <li><a href="page18.html"> بولین های جاوااسکریپت</a></li>
+            <li><a href="page19.html"> forحلقه در جاوااسکریپت</a></li>
+            <li><a href="page20.html">متد مپ در جاوااسکریپت</a></li>
 
-    </ul>
-  </div>
+        </ul>
+    </div>
 
-  <div class="right" style="background-color:rgb(255, 255, 255);">
+    <div class="right" style="background-color:rgb(255, 255, 255);">
 
 
-
-    <h1 style="direction:rtl;" class="ml15">
+        <h1 style="direction:rtl;" class="ml15">
       <span class="word"> Math object
 
       </span>
-      <span class="word">در جاوااسکریپت
+            <span class="word">در جاوااسکریپت
 
       </span>
-    </h1>
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <style>.ml15 {
-      font-weight: 800;
-      font-size: 3.8em;
-      text-transform: uppercase;
-      letter-spacing: 0.5em;
-    }
-
-    .ml15 .word {
-      display: inline-block;
-      line-height: 1em;
-    }</style>
-
-
-
-
+        </h1>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <style>.ml15 {
+            font-weight: 800;
+            font-size: 3.8em;
+            text-transform: uppercase;
+            letter-spacing: 0.5em;
+        }
+
+        .ml15 .word {
+            display: inline-block;
+            line-height: 1em;
+        }</style>
+
+
+        <script>anime.timeline({loop: true})
+          .add({
+            targets: '.ml15 .word',
+            scale: [14, 1],
+            opacity: [0, 1],
+            easing: "easeOutCirc",
+            duration: 800,
+            delay: (el, i) => 800 * i
+          }).add({
+            targets: '.ml15',
+            opacity: 0,
+            duration: 1000,
+            easing: "easeOutExpo",
+            delay: 1000
+          });</script>
+
+
+        <i>
+            <button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
+                <a id="editor72" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
+            </button>
+
+
+            <h1 style="direction: rtl;">The Math Object
+
+            </h1>
+            <p style="direction: rtl; font-size: 20px;">
+                بر خلاف سایر اشیاء، شی Math سازنده ندارد.
+                <br>
+                شی ریاضی ثابت است.
+                <br>
+                همه متدها و خصوصیات را می توان بدون ایجاد یک شی ریاضی اول استفاده کرد.
+            </p>
+
+            <h1 style="direction: rtl;">عدد به عدد صحیح</h1>
+
+            <p style="direction: rtl; font-size: 20px;">
+                4 روش معمول برای گرد کردن یک عدد به یک عدد صحیح وجود دارد:
+            </p>
+
+            <style>
+                table {
+                    font-family: arial, sans-serif;
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+
+                td, th {
+                    border: 1px solid #dddddd;
+                    text-align: left;
+                    padding: 8px;
+                }
+
+                tr:nth-child(even) {
+                    background-color: #dddddd;
+                }
+            </style>
+            </head>
+            <body>
+            <table>
+                <tr>
+                    <td>Math.round(x)</td>
+                    <td>x را به نزدیکترین عدد صحیح گرد شده برمی گرداند</td>
+                </tr>
+                <tr>
+                    <td>Math.ceil(x)</td>
+                    <td>x گرد شده را به نزدیکترین عدد صحیح برمی گرداند</td>
+                </tr>
+                <tr>
+                    <td>Math.floor(x)</td>
+                    <td>x گرد شده را به نزدیکترین عدد صحیح آن برمی گرداند</td>
+                </tr>
+                <tr>
+                    <td>Math.trunc(x)</td>
+                    <td>بخش عدد صحیح x را برمی‌گرداند (جدید در ES6)</td>
+                </tr>
+
+            </table>
+
+
+            <H1 style="direction: rtl;">Math.round()
+            </H1>
+            <button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
+                <a id="editor73" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
+            </button>
 
 
+            <H1 style="direction: rtl;">Math.ceil()
+            </H1>
+            <button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
+                <a id="editor74" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
+            </button>
 
 
-    <script>anime.timeline({loop: true})
-      .add({
-        targets: '.ml15 .word',
-        scale: [14,1],
-        opacity: [0,1],
-        easing: "easeOutCirc",
-        duration: 800,
-        delay: (el, i) => 800 * i
-      }).add({
-        targets: '.ml15',
-        opacity: 0,
-        duration: 1000,
-        easing: "easeOutExpo",
-        delay: 1000
-      });</script>
+            <H1 style="direction: rtl;">Math.floor()
 
+            </H1>
+            <button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
+                <a id="editor75" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
+            </button>
 
 
-<i>
-  <button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
-    <a href="editor72.html" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
-  </button>
+            <H1 style="direction: rtl;">Math.trunc()
+            </H1>
+            <button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
+                <a id="editor76" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
+            </button>
 
 
-<h1 style="direction: rtl;">The Math Object
+            <H1 style="direction: rtl;"> Math.sign()
+            </H1>
+            <button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
+                <a id="editor77" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
+            </button>
 
-</h1>
-<p style="direction: rtl; font-size: 20px;">
-    بر خلاف سایر اشیاء، شی Math سازنده ندارد.
-<br>
-    شی ریاضی ثابت است.
-    <br>
-    همه متدها و خصوصیات را می توان بدون ایجاد یک شی ریاضی اول استفاده کرد.
-</p>
 
-<h1 style="direction: rtl;">عدد به عدد صحیح</h1>
+            <p style="direction: rtl; font-size: 20px;">
+                Math.trunc() و Math.sign() به جاوا اسکریپت 2015 - ES6 اضافه شدند.
+            </p>
 
-<p style="direction: rtl; font-size: 20px;">
-    4 روش معمول برای گرد کردن یک عدد به یک عدد صحیح وجود دارد:
-</p>
 
-<style>
-    table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 100%;
-    }
+            <H1 style="direction: rtl;"> Math.min() و Math.max()</H1>
 
-    td, th {
-      border: 1px solid #dddddd;
-      text-align: left;
-      padding: 8px;
-    }
+            <button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
+                <a id="editor78" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
+            </button>
 
-    tr:nth-child(even) {
-      background-color: #dddddd;
-    }
-    </style>
-    </head>
-    <body>
-    <table>
-      <tr>
-        <td>Math.round(x)	</td>
-        <td>x را به نزدیکترین عدد صحیح گرد شده برمی گرداند</td>
-       </tr>
-      <tr>
-        <td>Math.ceil(x)	</td>
-        <td>x گرد شده را به نزدیکترین عدد صحیح برمی گرداند</td>
-       </tr>
-      <tr>
-        <td>Math.floor(x)	</td>
-        <td>x گرد شده را به نزدیکترین عدد صحیح آن برمی گرداند</td>
-       </tr>
-      <tr>
-        <td>Math.trunc(x)	</td>
-        <td>بخش عدد صحیح x را برمی‌گرداند (جدید در ES6)</td>
-       </tr>
 
-    </table>
+            <H1 style="direction: rtl;">
+                Math.random()
+            </H1>
+            <button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
+                <a id="editor79" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
+            </button>
 
 
-<H1 style="direction: rtl;">Math.round()
-</H1>
-<button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
-  <a href="editor73.html" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
-</button>
-
-
-
-<H1 style="direction: rtl;">Math.ceil()
-</H1>
-<button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
-  <a href="editor74.html" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
-</button>
-
-
-
-<H1 style="direction: rtl;">Math.floor()
-
-</H1>
-<button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
-  <a href="editor75.html" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
-</button>
-
-
-<H1 style="direction: rtl;">Math.trunc()
-</H1>
-<button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
-  <a href="editor76.html" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
-</button>
-
-
-
-
-    <H1 style="direction: rtl;">    Math.sign()
-</H1>
-<button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
-  <a href="editor77.html" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
-</button>
-
-
-  <p style="direction: rtl; font-size: 20px;">
-        Math.trunc() و Math.sign() به جاوا اسکریپت 2015 - ES6 اضافه شدند.
-    </p>
-
-
-
-
-
-
-
-    <H1 style="direction: rtl;"> Math.min() و Math.max()</H1>
-
-<button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
-  <a href="editor78.html" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
-</button>
-
-
-
-
-        <H1 style="direction: rtl;">
-        Math.random()
-</H1>
-<button style="background-color: coral; width: 270px;height: 70px; border-radius: 25px;">
-  <a href="editor79.html" class="button1" target="blank"><h3>خودتان بیاموزید </h3></a>
-</button>
-
-
-
-
-
-
-
-
-
-
-<br><br>
-  </i>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <br><br>
+        </i>
 
 
         <style>
             a {
-              text-decoration: none;
-              display: inline-block;
-              padding: 8px 16px;
+                text-decoration: none;
+                display: inline-block;
+                padding: 8px 16px;
             }
 
             a:hover {
-              background-color: orange;
-              color: black;
+                background-color: orange;
+                color: black;
             }
 
             .previous {
-              background-color: orange;
-              color: black;
+                background-color: orange;
+                color: black;
             }
 
             .next {
-              background-color: orange;
-              color: black;
+                background-color: orange;
+                color: black;
             }
 
 
-            </style>
-            </head>
-            <body>
+        </style>
+        </head>
+        <body>
 
 
-
-                <a href="page17.html" class="next">&laquo; بعدی</a>
-                <a href="page15.html" class="previous">قبلی &raquo;</a>
-
-
-            </body>
-            </html>
+        <a href="page17.html" class="next">&laquo; بعدی</a>
+        <a href="page15.html" class="previous">قبلی &raquo;</a>
 
 
+        </body>
+</html>
 
 
+</div>
+<script>
+  function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("mySearch");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myMenu");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
 
+  const editor72Html = `
+  <!DOCTYPE html>
+<html>
+<body>
 
+<h2>JavaScript Math.PI</h2>
 
+<p>Math.PI returns the ratio of a circle's circumference to its diameter:</p>
 
+<p id="demo"></p>
 
+<customS>
+document.getElementById("demo").innerHTML = Math.PI;
+</customS>
 
+</body>
+</html>
+  `
+  const editor73Html = `
+  <!DOCTYPE html>
+<html>
+<body>
 
+<h2>JavaScript Math.round()</h2>
 
+<p>Math.round(x) returns the value of x rounded to its nearest integer:</p>
 
+<p id="demo"></p>
 
+<customS>
+document.getElementById("demo").innerHTML = Math.round(4.6);
+</customS>
 
+</body>
+</html>
 
+  `
+  const editor74Html = `
+<!DOCTYPE html>
+<html>
+<body>
 
+<h2>JavaScript Math.ceil()</h2>
 
+<p>Math.ceil() rounds a number <strong>up</strong> to its nearest integer:</p>
 
+<p id="demo"></p>
 
+<customS>
+document.getElementById("demo").innerHTML = Math.ceil(4.4);
+</customS>
 
+</body>
+</html>
 
+  `
+  const editor75Html = `
+<!DOCTYPE html>
+<html>
+<body>
 
+<h2>JavaScript Math.floor()</h2>
 
+<p>Math.floor(x) returns the value of x rounded <strong>down</strong> to its nearest integer:</p>
 
-              </div>
-            <script>
-            function myFunction() {
-              var input, filter, ul, li, a, i;
-              input = document.getElementById("mySearch");
-              filter = input.value.toUpperCase();
-              ul = document.getElementById("myMenu");
-              li = ul.getElementsByTagName("li");
-              for (i = 0; i < li.length; i++) {
-                a = li[i].getElementsByTagName("a")[0];
-                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                  li[i].style.display = "";
-                } else {
-                  li[i].style.display = "none";
-                }
-              }
-            }
-            </script>
-            <br><br><br><br>
+<p id="demo"></p>
+
+<customS>
+document.getElementById("demo").innerHTML = Math.floor(4.7);
+</customS>
+
+</body>
+</html>
+  `
+  const editor76Html = `
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math.trunc()</h2>
+
+<p>Math.trunc(x) returns the integer part of x:</p>
+
+<p id="demo"></p>
+
+<customs>
+document.getElementById("demo").innerHTML = Math.trunc(4.7);
+</customs>
+
+</body>
+</html>
+  `
+  const editor77Html = `
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math.sign()</h2>
+
+<p>Math.sign(x) returns if x is negative, null or positive:</p>
+
+<p id="demo"></p>
+
+<customS>
+document.getElementById("demo").innerHTML = Math.sign(4);
+</customS>
+
+</body>
+</html>
+
+  `
+  const editor78Html = `
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math.min()</h2>
+
+<p>Math.min() returns the lowest value in a list of arguments:</p>
+
+<p id="demo"></p>
+
+<customS>
+document.getElementById("demo").innerHTML =
+Math.min(0, 150, 30, 20, -8, -200);
+</customS>
+
+</body>
+</html>
+
+  `
+  const editor79Html = `
+  <!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math.random()</h2>
+
+<p>Math.random() returns a random number between 0 (included) and 1 (excluded):</p>
+
+<p id="demo"></p>
+
+<customS>
+document.getElementById("demo").innerHTML = Math.random();
+</customS>
+
+</body>
+</html>
+  `
+
+  document.getElementById('editor72').href = "editor.html?script="+encodeURI(editor72Html)
+  document.getElementById('editor73').href = "editor.html?script="+encodeURI(editor73Html)
+  document.getElementById('editor74').href = "editor.html?script="+encodeURI(editor74Html)
+  document.getElementById('editor75').href = "editor.html?script="+encodeURI(editor75Html)
+  document.getElementById('editor76').href = "editor.html?script="+encodeURI(editor76Html)
+  document.getElementById('editor77').href = "editor.html?script="+encodeURI(editor77Html)
+  document.getElementById('editor78').href = "editor.html?script="+encodeURI(editor78Html)
+  document.getElementById('editor79').href = "editor.html?script="+encodeURI(editor79Html)
+
+</script>
+<br><br><br><br>
 
 </body>
 </html>

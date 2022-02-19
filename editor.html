@@ -60,9 +60,11 @@
         font-size: 1.2rem;
         white-space: pre-wrap;
         outline: none;
-        padding-right: 1rem 0 0 1rem;
+        color: black;
+        padding:10px;
         border-color: #ccc;
-        background-color: rgb(255, 228, 177);  border-radius: 25px;
+        background-color: rgb(255, 228, 177);
+        /*border-radius: 25px;*/
 
     }
 
@@ -241,8 +243,9 @@ const params = new Proxy(new URLSearchParams(window.location.search), {
 });
 let script = params.script; // "some_value"
 console.log('script raw : ', script)
+console.log('script decodeURI : ', decodeURIComponent(params.script))
 
-editor.textContent = script;
+editor.textContent = script.split('customS').join('script');
 document.getElementById("iframe").style.display = "none";
 
 const drag = (e) => {
